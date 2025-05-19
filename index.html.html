@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday Nabila 🎂</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #fff0f5;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #ffb6c1;
+            padding: 2em 1em;
+            color: white;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.2em;
+        }
+        p {
+            font-size: 1.2em;
+            margin: 0 1em;
+        }
+        .gallery {
+            margin: 2em auto;
+            max-width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+        }
+        .gallery img {
+            width: 300px;
+            max-width: 90vw;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        audio {
+            margin-top: 2em;
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+
+    <style>
+    .photo-grid img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+    }
+    .photo-grid img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    .heart {
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        background: url('https://cdn-icons-png.flaticon.com/512/833/833472.png') no-repeat center/contain;
+        animation: floatUp 2s ease-out forwards;
+        pointer-events: none;
+    }
+    @keyframes floatUp {
+        0% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-100px);
+        }
+    }
+    </style>
+    <script>
+    document.addEventListener("click", function(e) {
+        const heart = document.createElement("div");
+        heart.className = "heart";
+        heart.style.left = e.pageX + "px";
+        heart.style.top = e.pageY + "px";
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 2000);
+    });
+    </script>
+    
+</head>
+<body>
+    <header>
+        <h1>Happy Birthday, Nabila 🎉</h1>
+        <p>Selamat ulang tahun, cintaku. Terima kasih telah menjadi bagian tak terpisahkan dari hidupku.<br>
+        Doa yang terbaik selalu ku ucapkan untukmu. Semoga kamu terus menjadi orang yang luar biasa dan selalu bahagia.<br>
+        I love u more than u know 🤍</p>
+    </header>
+    <div class="gallery">
+        <img src="1.jpeg" alt="Foto 1">
+        <img src="2.jpeg" alt="Foto 2">
+        <img src="3.jpeg" alt="Foto 3">
+        <img src="4.jpeg" alt="Foto 4">
+        <img src="5.jpeg" alt="Foto 5">
+    </div>
+    <audio controls autoplay loop>
+        <source src="love_wave_to_earth.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <footer>
+        Made with love by Zindan 💖
+    </footer>
+</body>
+</html>
